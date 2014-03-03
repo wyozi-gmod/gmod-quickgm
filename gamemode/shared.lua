@@ -4,7 +4,10 @@ local basefol = GM.FolderName.."/gamemode/gm-modules/"
 
 local function LoadModuleFolder(modulenm)
 
-	local full_folder = basefol .. modulenm .. "/"
+	local full_folder = basefol
+	if modulenm and modulenm ~= "" then
+		full_folder = full_folder .. modulenm .. "/"
+	end
 
 	local files, folders = file.Find(full_folder .. "*", "LUA")
 
@@ -43,6 +46,8 @@ local function LoadModules()
 		LoadModuleFolder(ifolder)
 	end
 
+	LoadModuleFolder("")
+
 end
 
 GM.Name = "Example Gamemode"
@@ -64,3 +69,5 @@ function gmbp.PersistLog(msg)
 	f:Write(msg .. "\n")
 	f:Close()
 end
+
+LoadModules()
