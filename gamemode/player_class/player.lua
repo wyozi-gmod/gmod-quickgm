@@ -30,4 +30,4 @@ end
 function PLAYER:Loadout()
 end
 
-player_manager.RegisterClass( "player_gmbp", PLAYER, "player_default" )
+player_manager.RegisterClass( "player_gm", PLAYER, "player_default" )

@@ -1,13 +1,13 @@
-"GMBlueprint"
+"GMName"
 {
 	"base"		"base"
-    "title"  "Blueprint Gamemode"
+    "title"  "Gamemode Base"
     "version"   "0.0.1"
     "menusystem"	"1"
 
     "author_name"   "Wyozi"
     "author_email"  ""
-    "author_url"    "https://github.com/Wyozi"
+    "author_url"    "https://github.com/wyozi"
 
     "icon"  ""
     "info"  ""
